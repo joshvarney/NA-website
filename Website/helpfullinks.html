@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="literature.html">Literature</a>
+  <a href="12-steps.html">12-Steps</a>
+  <a href="helpfullinks.html">Helpful Links</a>
+</div>
+
+</head>
+<body>
+
+<div class="header" id="myHeader">
+  <img src="one day at a time.jpg" height="200" width="1310">
+</div>
+<title>Clay NA Helpful Links</title>
+
+<div class="content">
+  <h1>Welcome to the Clay NA Support & Discussion Group Helpful Links Page</h1>
+              <h3>Links to other recovery related resources</h3>
+              <ul>
+		<li><a href="https://www.facebook.com/groups/831562843710837/" target="_blank">Clay NA facebook group page</a></li>
+     		<li><a href="https://jftna.org/jft/" target="_blank">Just For Today</a></li>
+		<li><a href="https://www.na.org" target="_blank">NA World Page</a></li>
+  		<li><a href="http://www.angelfire.com/wv2/mrscna/meeting.html" target="_blank">NA WV Page</a></li>
+		<li><a href="http://www.usrecovery.info/" target="_blank">US Recovery</a></li>
+		</ul>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

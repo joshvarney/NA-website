@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="literature.html">Literature</a>
+  <a href="12-steps.html">12-Steps</a>
+  <a href="helpfullinks.html">Helpful Links</a>
+</div>
+
+</head>
+<body>
+
+<div class="header" id="myHeader">
+  <img src="one day at a time.jpg" height="200" width="1310">
+</div>
+<title>Clay NA 12-Steps</title>
+
+<div class="content">
+        <h1>Welcome to the Clay NA Support & Discussion Group 12-Steps Page</h1>
+              <p>Essentially, the steps are an outline.  It has been found that most of us, when in early recovery, fare best if we approach the process with a degree of organization, dealing with basic issues first, and then moving onward with our understanding and development on a well-built foundation.  I like to refer to steps 1-3 as the "acceptance" steps; 4-9 as the "action" steps; and 10-12 as "maintenance" steps.  They are the ones that we continue to practice "in all our affairs," as stated in Step Twelve.</p>
+              <h3>The 12 Steps</h3>
+		<ol>
+		  <li>We admitted that we were powerless over our addiction, that our lives had become unmanageable.</li>
+		  <li>We came to believe that a Power greater than ourselves could restore us to sanity.</li>
+		  <li>We made a decision to turn our will and our lives over to the care of God as we understood Him.</li>
+		  <li>We made a searching and fearless moral inventory of ourselves.</li>
+		  <li>We admitted to God, to ourselves, and to another human being the exact natre of our wrongs.</li>
+		  <li>We were entirely ready to have God remove all these defects of character.</li>
+		  <li>We humbly asked Him to remove our shortcomings.</li>
+		  <li>We made a list of all persons we had harmed and became willing to make amends to them all.</li>
+		  <li>We made direct amends to such people wherever possible, except when to do so would injure them or others.</li>
+		  <li>We continued to take personal inventory and when we were wrong promptly admitted it.</li>
+		  <li>We sought through prayer and meditation to improve our conscious contact with God as we understood Him, praying only for knowledge of His will for us and the power to carry that out.</li>
+		  <li>Having had a spiritual awakening as a result of these steps, we tried to carry this message to addicts, and to practice these principles in all our affairs.</li>
+		</ol>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
